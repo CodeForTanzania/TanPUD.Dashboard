@@ -34,5 +34,8 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
+    'api' => [
+        'host' => env('API_HOST'),
+    ],
 
 ];
