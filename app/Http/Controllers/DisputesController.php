@@ -55,7 +55,7 @@ class DisputesController extends Controller
     public function getDisputes($uri = ""){
         $client = new \GuzzleHttp\Client(['http_errors' => true]);
 
-        $url = "http://54.76.5.187:8990/restsql/res/Dispute?_output=application/json&_limit=50&_offset=0";
+        $url = config('services.api.host') . "/restsql/res/Dispute?_output=application/json&_limit=50&_offset=0";
 
         if($uri != ""){
             $url .= "&_URI=";
